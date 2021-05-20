@@ -10,11 +10,11 @@ export function FavoriteView(props) {
 
   return (
     <>
-          <div className='favorite-view-container'>
+          <div className='container'>
               {favoriteList != '' ? favoriteList.map((obj) =>{
                 return <>
-                  <div className='output-container'>
-                    <div className='output-box'>
+                  <div className='search-output-container'>
+                    <div className='search-output-box'>
                       <p>Palabra: {obj.word}</p>
                       <p>Definicion: {obj.definition}</p>
                     </div>

@@ -20,14 +20,11 @@ export function SearchOutput(props) {
 
   return (
     <>
-          <div className='output-container'>
-            <div className='output-box'>
+            <div className='search-output-box'>
                 <p>Palabra: {props.word}</p>
                 <p>Definicion: {props.definition}</p>
             </div>
             {props.word != '' ? <StarOutlined onClick={onClick} style={{fontSize: '2rem'}}/> : null}
-          </div>
-          {console.log(favoriteList)}
 
     </>
   );

@@ -19,30 +19,45 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
 }
-
-
-.output-box{
+.app-container{
   display: flex;
   flex-direction: column;
-  padding-right: 20%;
+  align-items: center;
+  margin-top: 3rem;
 }
 
-.output-container{
-  padding: 5%;
+.search-input-container{
   display: flex;
-  width: 300px;
-  margin-bottom: 10%;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border-color: whitesmoke;
-  border-width: 3px;
+ 
+}
+
+.search-output-container{
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
   border-style: dashed;
+  border-color: whitesmoke;
+  border-width: 2px;
+  justify-content: space-between;
+  margin: 2rem;
 }
-
-.favorite-view-container{
+.search-output-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0rem;
+  width: 60%;
+
+}
+
+.alert-error{
+  margin-top: 2rem;
+}
+
+@media (min-width: 720px) {
+  .app-container{
+    width: 500px;
+  }
 }

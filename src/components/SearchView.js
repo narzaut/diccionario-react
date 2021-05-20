@@ -25,24 +25,30 @@ export function SearchView() {
         setQuery('')
       })
       .catch(() =>{
+        setWord([])
         setError(true)
       })
   }
 
 
   return (
-    <>
-          <label>Busque una palabra</label>
-          <Search onChange={e=>setQuery(e.target.value)} value={query} placeholder="Ingrese una palabra" style = {{width:'100%', padding:'5% 25%'}}onSearch={onSearch} enterButton />
-          {word != '' ? <SearchOutput word= {word} definition= {definition}/> : ''}
-          {error === true ? <Alert style={{marginBottom: '10%'}}message="La palabra que esta buscando no existe" type="error" showIcon/> : ''}
-          <Link to='/favorite'>
-            <Button type="dashed" ghost>
-              Mostrar palabras favoritas
-            </Button>
-          </Link>
+    <div class='app-container'>
+      <div class='search-input-container'>
+        <label>Busque una palabra</label>
+        <Search onChange={e=>setQuery(e.target.value)} value={query} placeholder="Ingrese una palabra" onSearch={onSearch} enterButton />
+      </div>
+      <div class={word != '' ? 'search-output-container' : 'alert-error'}>
+        {word != '' ? <SearchOutput word= {word} definition= {definition}/> : ''}
+      </div>
+      {error === true ? <Alert style={{marginBottom: '10%'}}message="La palabra que esta buscando no existe" type="error" showIcon/> : ''}
+      <Link to='/favorite'>
+        <Button type="dashed" ghost>
+          Mostrar palabras favoritas
+        </Button>
+      </Link>
+      
           
-    </>
+    </div>
   );
 }
 
