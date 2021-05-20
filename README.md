@@ -1,7 +1,7 @@
 # Ejercicio
 En los siguientes ejercicios, se evaluará las capacidades para desarrollar en React utilizando las siguientes características:
 
-Elementos y Componentes (y las props).\.\
+Elementos y Componentes (y las props).\
 Estado y ciclo de vida del mismo.\
 Router y navegación
 
@@ -9,7 +9,7 @@ Se deberá realizar un ejercicio que contenga las siguientes características:
 
 Se debe realizar una aplicación cuyo funcionamiento sea buscar el significado de una palabra. .\
 Al encontrar el significado de la palabra es posible guardarlo como favoritos.\
-Se puede tener un listado de palabras favoritas y sus definiciones, así como también quitar palabras del listado de palabras favoritas..\
+Se puede tener un listado de palabras favoritas y sus definiciones, así como también quitar palabras del listado de palabras favoritas. .\
 Las palabras en el listado de palabras favoritas deben estar ordenadas alfabéticamente, utilizando sort (https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).\
 Debe haber un botón para limpiar la lista de palabras favoritas. .\
 Se debe utilizar la API de LocalStorage (https://developer.mozilla.org/es/docs/Web/API/Window/localStorage) para persistir los datos en el navegador, de forma que al refrescar el navegador (F5) no se borren los datos..\
