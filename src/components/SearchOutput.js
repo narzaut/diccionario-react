@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect} from 'react';
+import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState'
 import { StarOutlined } from '@ant-design/icons'
 export function SearchOutput(props) {
@@ -24,7 +24,7 @@ export function SearchOutput(props) {
                 <p>Palabra: {props.word}</p>
                 <p>Definicion: {props.definition}</p>
             </div>
-            {props.word != '' ? <StarOutlined onClick={onClick} style={{fontSize: '2rem'}}/> : null}
+            {props.word != '' ? <StarOutlined onClick={onClick} style={{fontSize: '2rem', color:'orange'}}/> : null}
 
     </>
   );

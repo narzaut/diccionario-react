@@ -34,7 +34,7 @@ export function SearchView() {
   return (
     <div class='app-container'>
       <div class='search-input-container'>
-        <label>Busque una palabra</label>
+        <label style={{marginBottom: '1rem'}}>Busque una palabra</label>
         <Search onChange={e=>setQuery(e.target.value)} value={query} placeholder="Ingrese una palabra" onSearch={onSearch} enterButton />
       </div>
       <div class={word != '' ? 'search-output-container' : 'alert-error'}>
