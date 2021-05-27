@@ -27,18 +27,18 @@ Se deben guardar las palabras favoritas en el estado, y al montarse el component
 En caso de que la definición de la palabra que se esté buscando no exista, la API devolverá un mensaje diciendo que la palabra no existe. En este caso, la aplicación debería reaccionar de forma adecuada, mostrando un alert (o cualquier otro método que provee Ant Design para mostrar errores) 
 Para guardar los datos en el localStorage, el posible que se necesite usar JSON.parse y JSON.stringify
 */
+
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {SearchView} from './components/SearchView'
-import { GlobalContext } from './context/GlobalState'
 import { FavoriteView } from './components/FavoriteView'
 function App() {
   return (
     <Router>
       <div className = 'container'>
         <Switch>
-          <Route path='/' exact component={SearchView} />
-          <Route path='/favorite' exact component={FavoriteView} />
+          <Route path='/' exact component={ SearchView } />
+          <Route path='/favorite' exact component={ FavoriteView } />
         </Switch>
       </div>
     </Router>

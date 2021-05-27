@@ -23,12 +23,12 @@ export function FavoriteView(props) {
               <p>Palabra: {obj.word}</p>
               <p>Definicion: {obj.definition}</p>
             </div>
-            <DeleteOutlined style={{ fontSize:'2rem', color:'#FF7875' }} onClick={ () => {
+            <DeleteOutlined className='delete-btn btn-press' onClick={ () => {
               setFavoriteList(favoriteList.filter(word => word.id != obj.id))
             }}/>
           </div>
         )
-      }) : <h2 style={{color:'whitesmoke', padding: '2rem', textAlign:'center'}}>No existen palabras marcadas como favoritas.</h2>}
+      }) : <h2 style={ {color:'whitesmoke', padding: '2rem', textAlign:'center'} }>No existen palabras marcadas como favoritas.</h2> }
       { favoriteList != '' ? <Button type="primary" danger onClick={() => {
         setFavoriteList(favoriteList.filter(word => word !== word))
       }}>

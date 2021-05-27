@@ -37,9 +37,9 @@ export function SearchView() {
         <Search onChange={ e => setQuery(e.target.value) } value={ query } placeholder="Ingrese una palabra" onSearch={ onSearch } enterButton />
       </div>
       <div class={word != '' ? 'search-output-container' : 'alert-error'}>
-        {word != '' ? <SearchOutput word= {word} definition= {definition}/> : ''}
+        {word != '' ? <SearchOutput word={ word } definition={ definition }/> : ''}
       </div>
-      {error === true ? <Alert style={{ marginBottom: '10%' }} message="La palabra que esta buscando no existe" type="error" showIcon/> : ''}
+      { error === true ? <Alert style={{ marginBottom: '10%' }} message="La palabra que esta buscando no existe" type="error" showIcon/> : '' }
       <Link to='/favorite'>
         <Button type="dashed" ghost>
           Mostrar palabras favoritas

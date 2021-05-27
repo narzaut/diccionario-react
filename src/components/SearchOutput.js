@@ -18,7 +18,7 @@ export function SearchOutput(props) {
         <p>Palabra: { props.word }</p>
         <p>Definicion: { props.definition }</p>
       </div>
-      { props.word != '' ? <StarOutlined onClick={ onClick } style={{ fontSize: '2rem', color:'orange' }}/> : null }
+      { props.word != '' ? <StarOutlined onClick={ onClick } className='fav-btn btn-press'/> : null }
     </>
   );
 }
