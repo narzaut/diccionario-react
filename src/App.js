@@ -29,7 +29,7 @@ Para guardar los datos en el localStorage, el posible que se necesite usar JSON.
 */
 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 import {SearchView} from './components/SearchView'
 import { FavoriteView } from './components/FavoriteView'
 function App() {
